@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Rock%20Salt:wght@400;700&display=swap"
+    />
+    <title>Artists</title>
+    <style>
+      body {
+        font-family:Arial, Helvetica, sans-serif;
+        background-image: url("../../static/pictures/bg12.jpg");
+        background-size: cover;
+        background-position: fixed;
+        background-blend-mode: color-burn;
+        margin: 0;
+        padding: 0;
+      }
+
+      h1 {
+        text-align: center;
+        font-family: 'Rock Salt', sans-serif;
+        margin-top: 0;
+        font-size: 70px;
+        color: #ffffff;
+      }
+
+      /* Styles for the container that holds the singers */
+      .singers-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        padding: 20px;
+        /* background-color: #f7f7f7; */
+      }
+
+      /* Styles for each singer card */
+      .singer-card {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        max-width: 800px;
+        height: auto;
+        border-radius: 30px;
+        box-shadow: 0 4px 8px rgb(247, 247, 247);
+        background-color: transparent;
+        text-align: center;
+        font-family: Arial, sans-serif;
+      }
+
+      a {
+        color: white;
+        font-size: 100%;
+        text-decoration: none;
+      }
+
+      a:hover {
+        color: rgb(248, 106, 54);
+      }
+
+      .singer-card img {
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        object-fit: cover;
+        margin-right: 10px;
+      }
+
+      .singer-card .details {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        color: aliceblue;
+        height: 100%;
+        width: 70%;
+      }
+
+      .singer-card h2 {
+        font-size: 30px;
+        margin-top: 0;
+        color: aliceblue;
+        margin-bottom: 10px;
+      }
+
+      .singer-card p {
+        font-size: 16px;
+        line-height: 1.5;
+        margin-top: 0;
+        margin-bottom: 20px;
+      }
+
+      .navbar {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background-color: #333;
+        z-index: 1;
+      }
+
+      .navbar li.logo {
+        float: left;
+      }
+
+      .navbar li.logo a img {
+        width: 35px;
+        height: 35px;
+        border-radius: 50%;
+        vertical-align: middle;
+      }
+
+      .navbar ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+      }
+
+      .navbar li {
+        float: right;
+        margin: 5px;
+        font-size: larger;
+        background-color: transparent;
+      }
+
+      .navbar li a {
+        display: block;
+        color: white;
+        text-align: center;
+        font-size: 25px;
+        padding: 5px 7px;
+        text-decoration: none;
+      }
+
+      .navbar li a:hover:not(.active) {
+        background-color: #111;
+      }
+
+      .active {
+        background-color: #04aa6d;
+        size: cover;
+      }
+
+      footer {
+        /* position: fixed; */
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: flex;
+        background-color: #333;
+        color: #fff;
+        padding: 2px;
+        text-align: center;
+      }
+
+      .fa-instagram {
+        background: transparent;
+        color: white;
+      }
+
+      .fa-twitter {
+        background: transparent;
+        color: white;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="navbar">
+      <ul>
+        <li class="logo">
+          <a href="animation.html"><img src="../../static/pictures/logo2.png" alt="Logo" />TUNESPHERE</a>
+        </li>
+        <li><a href="about.html">About</a></li>
+        <li><a class="active" href="artist2.html">Artists</a></li>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="search.html">Search</a></li>
+        <li><a href="spotlight.html">Spotlight</a></li>
+        <li><a href="playlist.html">Playlist</a></li>
+      </ul>
+    </div>
+    <p><br /><br /><br /></p>
+    <h1>ARTISTS</h1>
+    <div class="singers-container">
+      <a href="src1/1website/arijit%20singh/arijitsingh.html">
+        <div class="singer-card">
+          <img src="../../static/pictures/arijit.jpeg" alt="Singer 1" />
+          <div class="details">
+            <h2 href="src1/1website/arijit%20singh/arijitsingh.html">
+              Arijit Singh
+            </h2>
+            <p>29,942,516 monthly listeners</p>
+            <a
+              href="https://www.instagram.com/arijitsingh/?hl=en"
+              class="fa fa-instagram"
+            >
+              Instagram</a
+            >
+            <p>
+              About<br />Arijit Singh is an Indian singer and music composer.
+              The recipient of several accolades including a National Film Award
+              and six Filmfare Awards, he has recorded songs in several Indian
+              languages and has established himself as one of the leading
+              playback singers of Bollywood.
+            </p>
+          </div>
+        </div>
+      </a>
+      <a href="src1/1website/selena%20gomez/selenagomez.html">
+        <div class="singer-card">
+          <img src="../../static/pictures/selena.jpeg" alt="Singer 2" />
+          <div class="details">
+            <h2 href="src1/1website/selena%20gomez/selenagomez.html">
+              Selena Gomez
+            </h2>
+            <p>70,934,205 monthly listeners</p>
+            <a
+              href="https://www.instagram.com/selenagomez/"
+              class="fa fa-instagram"
+            >
+              Instagram</a
+            >
+            <p>
+              About<br />
+              Selena Marie Gomez is an American singer, actress, producer, and
+              businesswoman. Gomez began her acting career on the children's
+              television series Barney & Friends. As a teenager, she rose to
+              prominence for starring as Alex Russo on the Disney Channel
+              television series Wizards of Waverly Place.
+            </p>
+          </div>
+        </div>
+      </a>
+      <a href="src1/1website/ariana%20grande/arianagrande.html">
+        <div class="singer-card">
+          <img src="../../static/pictures/ariana_grande.jpg" alt="Singer 3" />
+          <div class="details">
+            <h2 href="src1/1website/ariana%20grande/arianagrande.html">
+              Ariana Grande
+            </h2>
+            <p>82,706,654 monthly listeners</p>
+            <a
+              href="https://www.instagram.com/arianagrande/?hl=en"
+              class="fa fa-instagram"
+            >
+              Instagram</a
+            >
+            <p>
+              About<br />Ariana Grande-Butera is an American singer, songwriter,
+              and actress. She is noted for her four-octave vocal range and her
+              signature use of the whistle register, which have received
+              critical acclaim by critics and media. Her personal life
+            </p>
+          </div>
+        </div>
+      </a>
+      <a href="src1/1website/ed%20sheeran/edsheeran.html">
+        <div class="singer-card">
+          <img src="../../static/pictures/edsheeran.jpeg" alt="Singer 4" />
+          <div class="details">
+            <h2 href="src1/1website/ed%20sheeran/edsheeran.html">Ed Sheeran</h2>
+            <p>70,934,205 monthly listeners</p>
+            <a
+              href="https://www.instagram.com/teddysphotos/?hl=en"
+              class="fa fa-instagram"
+            >
+              Instagram</a
+            >
+            <p>
+              About<br />Edward Christopher Sheeran, MBE is an English
+              singer-songwriter. In early 2011, Sheeran independently released
+              the extended play, No. 5 Collaborations Project. After signing
+              with Asylum Records, his debut album, +, was released in September
+              2011 and topped the UK Albums Chart.
+            </p>
+          </div>
+        </div>
+      </a>
+      <a href="src1/1website/justin%20bieber/justinbieber.html">
+        <div class="singer-card">
+          <img src="../../static/pictures/Justin-Bieber.jpg" alt="Singer 4" />
+          <div class="details">
+            <h2 href="src1/1website/justin%20bieber/justinbieber.html">
+              Justin Bieber
+            </h2>
+            <p>70,934,205 monthly listeners</p>
+            <a
+              href="https://www.instagram.com/justinbieber/?hl=en"
+              class="fa fa-instagram"
+            >
+              Instagram</a
+            >
+            <p>
+              About<br />
+              Justin Drew Bieber is a Canadian singer. Bieber is recognized for
+              his genre-melding musicianship. Justin's recent album JUSTICE
+              includes the chart-topping global smashes "Peaches feat. Daniel
+              Caesar & Giveon", “Holy” feat. Chance The Rapper, “Lonely” feat.
+              Benny Blanco, “Anyone,” and “Hold On."
+            </p>
+          </div>
+        </div>
+      </a>
+      <a href="src1/1website/the%20weeknd/theweeknd.html">
+        <div class="singer-card">
+          <img src="../../static/pictures/weeknd.jpg" alt="Singer 4" />
+          <div class="details">
+            <h2 href="src1/1website/the%20weeknd/theweeknd.html">The Weeknd</h2>
+            <p>70,934,205 monthly listeners</p>
+            <a
+              href="https://www.instagram.com/theweeknd/?hl=en"
+              class="fa fa-instagram"
+            >
+              Instagram</a
+            >
+            <p>
+              About<br />
+              Abel Makkonen Tesfaye, known professionally as the Weeknd, is a
+              Canadian singer and songwriter. Known for his sonic versatility
+              and dark lyricism, his music explores escapism, romance, and
+              melancholia, and is often inspired by personal experiences.
+            </p>
+          </div>
+        </div>
+      </a>
+    </div>
+    <p><br /><br /><br /></p>
+    <footer>
+      <p>
+        &copy; Creators: Aniket Gupta,Samarth Srikar<br />
+        <a href="about.html" style="color: white; font-size: 100%">About</a>
+      </p>
+    </footer>
+  </body>
+</html>

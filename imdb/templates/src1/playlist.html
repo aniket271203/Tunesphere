@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Playlist</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Rock%20Salt:wght@400;700&display=swap"
+    />
+    <style>
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+        background-image: url("../../static/pictures/bg12.jpg");
+        background-size: cover;
+        background-position: fixed;
+        background-blend-mode: color-burn;
+        margin: 0;
+        padding: 0;
+      }
+
+      h1 {
+        text-align: center;
+        font-family: "Rock Salt", sans-serif;
+        margin-top: 0;
+        font-size: 40px;
+        color: #ffffff;
+      }
+      .song-list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+      }
+
+      .song-card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 20px;
+        width: 325px;
+        height: 200px;
+        background-color: #464646;
+        border-radius: 50px;
+        color: #fff;
+        text-align: center;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+      }
+      .song-card h1 {
+        text-align: center;
+        font-family: "Rock Salt", sans-serif;
+        margin-top: 0;
+        font-size: 25px;
+        color: #ffffff;
+      }
+      .song-card h2 {
+        margin: 10px;
+      }
+
+      .song-card p {
+        margin: 5px;
+      }
+
+      .song-card button {
+        margin: 10px;
+        background-color: #04aa6d;
+        color: #fff;
+        border: none;
+        padding: 8px 16px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 14px;
+        cursor: pointer;
+        border-radius: 4px;
+      }
+
+      .song-card button:hover {
+        background-color: #555;
+      }
+      .navbar {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background-color: #333;
+        z-index: 1;
+      }
+
+      .navbar li.logo {
+        float: left;
+      }
+
+      .navbar li.logo a img {
+        width: 35px;
+        height: 35px;
+        border-radius: 50%;
+        vertical-align: middle;
+      }
+
+      .navbar ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+      }
+
+      .navbar li {
+        float: right;
+        margin: 5px;
+        font-size: larger;
+        background-color: transparent;
+      }
+
+      .navbar li a {
+        display: block;
+        color: white;
+        text-align: center;
+        font-size: 25px;
+        padding: 5px 7px;
+        text-decoration: none;
+      }
+
+      .navbar li a:hover:not(.active) {
+        background-color: #111;
+      }
+
+      .active {
+        background-color: #04aa6d;
+        size: cover;
+      }
+
+      footer {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: flex;
+        background-color: #333;
+        color: #fff;
+        padding: 2px;
+        text-align: center;
+      }
+      .back-button {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+      }
+
+      .back-button button {
+        background-color: #04aa6d;
+        color: #fff;
+        border: none;
+        padding: 10px 20px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        cursor: pointer;
+        border-radius: 4px;
+      }
+
+      .back-button button:hover {
+        background-color: #555;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="navbar">
+      <ul>
+        <li class="logo">
+          <a href="animation.html"
+            ><img
+              src="../../static/pictures/logo2.png"
+              alt="Logo"
+            />TUNESPHERE</a
+          >
+        </li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="artist2.html">Artists</a></li>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="search.html">Search</a></li>
+        <li><a href="spotlight.html">Spotlight</a></li>
+        <li><a class="active" href="playlist.html">Playlist</a></li>
+      </ul>
+    </div>
+    <h1><br />PLAYLIST</h1>
+    <div class="song-list">
+      {% for song in songs %}
+      <div class="song-card">
+        <h1>Song</h1>
+        <h2>{{ song.name }}</h2>
+        <p>{{ song.artist }}</p>
+        <form method="post" action="/remove_song">
+          <input type="hidden" name="song_id" value="{{ song.id }}" />
+          <button type="submit">Remove</button>
+        </form>
+      </div>
+      {% endfor %}
+    </div>
+    <footer>
+      <p>
+        &copy; Creators: Aniket Gupta,Samarth Srikar<br />
+        <a href="about.html" style="color: white; font-size: 100%">About</a>
+      </p>
+    </footer>
+  </body>
+</html>

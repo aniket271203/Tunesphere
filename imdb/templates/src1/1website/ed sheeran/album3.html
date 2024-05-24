@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Ed Sheeren Top 5 Songs</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background: url("../../../../static/pictures/ed sheeran/album3.jpeg") no-repeat center center fixed;
+        background-size: 45%;
+        background-color: black;
+        margin: 0;
+        padding: 0;
+      }
+
+      .overlay {
+        background-color: rgba(0, 0, 0, 0.4);
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        top: 7%;
+        left: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+
+      h1 {
+        font-size: 80px;
+        color: white;
+        font-weight: bold;
+        text-align: center;
+        margin-top: 40px;
+        margin-bottom: 20px;
+      }
+
+      h2 {
+        font-size: 40px;
+        color: #ffffff;
+        text-align: center;
+        margin-top: 20px;
+        margin-bottom: 40px;
+      }
+
+      ol {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+      }
+
+      li {
+        display: flex;
+        align-items: center;
+        font-size: 24px;
+        color: #ffffff;
+        margin-bottom: 10px;
+        padding: 10px;
+        border-radius: 15px;
+        background-color: rgba(0, 0, 0, 0.5);
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        transition: background-color 0.3s ease-in-out;
+      }
+
+      li:hover {
+        background-color: rgba(0, 0, 0, 0.7);
+      }
+
+      li strong {
+        color: #ffffff;
+        font-size: 30px;
+        font-weight: bold;
+        margin-right: 370px;
+      }
+
+      li span {
+        color: #ffffff;
+        font-size: 14px;
+        font-weight: normal;
+        margin-left: auto;
+        padding-right: 10px;
+      }
+
+      .navbar {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background-color: #333;
+      }
+
+      .navbar li.logo {
+        float: left;
+      }
+
+      .navbar li.logo a img {
+        width: 35px;
+        height: 35px;
+        border-radius: 50%;
+        vertical-align: middle;
+      }
+
+      .navbar ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+      }
+
+      .navbar li {
+        float: right;
+        background-color: transparent;
+      }
+
+      .navbar li a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 5px 0px;
+        text-decoration: none;
+      }
+
+      .navbar li a:hover:not(.active) {
+        background-color: #111;
+      }
+
+      .active {
+        background-color: #04aa6d;
+      }
+      .add-button {
+        background-color: #4caf50; /* Green background color */
+        border: none; /* Remove button borders */
+        color: white; /* White text color */
+        padding: 5px 10px; /* Add some padding to the button */
+        text-align: center; /* Center button text */
+        text-decoration: none; /* Remove underline from button text */
+        display: inline-block; /* Make button a block element */
+        font-size: 16px; /* Set button font size */
+        margin: 4px 2px; /* Add some margin around the button */
+        cursor: pointer; /* Change cursor style to indicate button is clickable */
+      }
+
+
+      footer {
+        /* position: fixed; */
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        background-color: #333;
+        color: #fff;
+        padding: 10px;
+        text-align: center;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="navbar">
+      <ul>
+        <li class="logo">
+          <a href="../../../home.html"
+            ><img src="../../../../static/pictures/ed sheeran/logo2.png" alt="Logo" />TUNESPHERE</a
+          >
+        </li>
+        <li><a href="../../../home.html">Home</a></li>
+        <li><a href="../../../about.html">About</a></li>
+        <li><a href="../../../artist2.html">Artists</a></li>
+        <li><a href="../../../search.html">Search</a></li>
+        <li><a href="../../../spotlight.html">Spotlight</a></li>
+        <li><a href="../../../playlist.html">Playlist</a></li>
+      </ul>
+    </div>
+    <div class="overlay">
+      <h1>Ed Sheeren - x</h1>
+      <h2>Album: Ed Sheeren - x</h2>
+      <ol>
+        <li><strong>One</strong><span>4:12</span>
+          <form method="POST" action="/add_to_playlist">
+            <input type="hidden" name="song_name" value="One" />
+            <input type="hidden" name="artist_name" value="Ed Sheeran" />
+            <button type="submit" class="add-button">Add</button>
+          </form>
+        </li>
+        <li><strong>I'm a Mess</strong><span>4:05</span>
+          <form method="POST" action="/add_to_playlist">
+            <input type="hidden" name="song_name" value="I'm a Mess" />
+            <input type="hidden" name="artist_name" value="Ed Sheeran" />
+            <button type="submit" class="add-button">Add</button>
+          </form>
+        </li>
+        <li><strong>Sing</strong><span>3:55</span>
+          <form method="POST" action="/add_to_playlist">
+            <input type="hidden" name="song_name" value="Sing" />
+            <input type="hidden" name="artist_name" value="Ed Sheeran" />
+            <button type="submit" class="add-button">Add</button>
+          </form>
+        </li>
+        <li><strong>Don't</strong><span>3:39</span>
+          <form method="POST" action="/add_to_playlist">
+            <input type="hidden" name="song_name" value="Don't" />
+            <input type="hidden" name="artist_name" value="Ed Sheeran" />
+            <button type="submit" class="add-button">Add</button>
+          </form>
+        </li>
+        <li><strong>Nina</strong><span>3:45</span>
+          <form method="POST" action="/add_to_playlist">
+            <input type="hidden" name="song_name" value="Nina" />
+            <input type="hidden" name="artist_name" value="Ed Sheeran" />
+            <button type="submit" class="add-button">Add</button>
+          </form>
+        </li>
+      </ol>
+    </div>
+    <footer>
+      <p>
+        &copy; Creators: Aniket Gupta,Samarth Srikar<br />
+        <a href="../../../about.html" style="color: white; font-size: 100%"
+          >About</a
+        >
+      </p>
+    </footer>
+  </body>
+</html>

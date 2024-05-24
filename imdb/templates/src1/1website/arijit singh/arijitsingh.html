@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Arijit Singh Top 5 Albums</title>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Open Sans', sans-serif;
+            /* background-color: #F5F5F5; */
+            background-image: url("../../../../static/pictures/arijit singh/bg3.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1 {
+            font-size: 60px;
+            font-weight: 600;
+            background-image: linear-gradient(to left, #553c9a, #b393d3);
+            color: transparent;
+            background-clip: text;
+            -webkit-background-clip: text;
+        }
+
+        h2,
+        p,
+        ul {
+            margin: 0;
+            padding: 0;
+        }
+
+        h1 {
+            text-align: center;
+            color: aliceblue;
+            margin-top: 30px;
+        }
+
+        .container {
+            max-width: 80%;
+            margin: 0 auto;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .album {
+            margin: 20px;
+            padding: 20px;
+            background-color: rgb(235, 230, 230);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 20px;
+            text-align: center;
+            transition: all 0.3s ease-in-out;
+            min-width: 230px;
+            max-width: 230px;
+        }
+
+        .album:hover {
+            transform: scale(1.05);
+        }
+
+        .album img {
+            max-width: 100%;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+
+        .album h2 {
+            font-size: 1.2rem;
+            font-weight: 600;
+            margin-bottom: 5px;
+        }
+
+        .album p {
+            font-size: 1rem;
+            margin-bottom: 5px;
+        }
+
+        .album .year {
+            font-style: italic;
+        }
+
+        .album .tracks {
+            margin-top: 10px;
+            font-size: 0.9rem;
+        }
+
+        .album .tracks p {
+            font-weight: 600;
+            margin-bottom: 5px;
+        }
+
+        .album .tracks ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            text-align: left;
+        }
+
+        .album .tracks li {
+            margin-bottom: 5px;
+        }
+
+        .navbar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: #333;
+            z-index: 1;
+        }
+
+        .navbar {
+			position: fixed;
+			top: 0;
+			left: 0;
+			width: 100%;
+			background-color: #333;
+		}
+
+		.navbar li.logo {
+			float: left;
+		}
+
+		.navbar li.logo a img {
+            width: 35px;
+            height: 35px;
+            border-radius: 50%;
+			vertical-align: middle;
+		}
+
+		.navbar ul {
+			list-style-type: none;
+			margin: 0;
+			padding: 0;
+			overflow: hidden;
+		}
+
+		.navbar li {
+			float: right;
+            margin: 5px;
+            font-size: larger;
+			background-color: transparent;
+		}
+
+		.navbar li a {
+			display: block;
+			color: white;
+			text-align: center;
+			padding: 5px 0px;
+			text-decoration: none;
+		}
+
+		.navbar li a:hover:not(.active) {
+			background-color: #111;
+		}
+
+		.active {
+			background-color: #04AA6D;
+		}
+        footer {
+			/* position: fixed; */
+			bottom: 0;
+			left: 0;
+			width: 100%;
+			background-color: #333;
+			color: #fff;
+			padding: 10px;
+			text-align: center;
+		}
+    </style>
+</head>
+
+<body>
+    <div class="navbar">
+		<ul>
+			<li class="logo"><a href="../../../home.html"><img src="../../../../static/pictures/arijit singh/logo2.png" alt="Logo">TUNESPHERE</a></li>
+			<li><a href="../../../home.html">Home</a></li>
+            <li><a href="../../../about.html">About</a></li>
+            <li><a href="../../../artist2.html">Artists</a></li>
+            <li><a href="../../../search.html">Search</a></li>
+        <li><a href="../../../spotlight.html">Spotlight</a></li>
+        <li><a href="../../../playlist.html">Playlist</a></li>
+		</ul>
+	</div>
+    <p><br></p>
+    <h1>Arijit Singh's Top 5 Albums</h1>
+
+    <div class="container">
+        <a href="album1.html">
+            <div class="album">
+                <img src="../../../../static/pictures/arijit singh/album1.jpg" alt="Arijit Singh - Best of the Year" />
+                <h2>Best of the Year</h2>
+                <p>Arijit Singh</p>
+                <p class="year">Released: 2017</p>
+                <div class="tracks">
+                    <p>Tracks:</p>
+                    <ul>
+                        <li>Zaalima</li>
+                        <li>Enna Sona</li>
+                        <li>Phir Bhi Tumko Chahunga</li>
+                        <li>Roke Na Ruke Naina</li>
+                        <li>Samjhawan</li>
+                    </ul>
+                </div>
+        </a>
+    </div>
+
+    <div class="album">
+        <a href="album2.html">
+            <img src="../../../../static/pictures/arijit singh/album2.jpg" alt="Arijit Singh - Love Stories" />
+            <h2>Love Stories</h2>
+            <p>Arijit Singh</p>
+            <p class="year">Released: 2020</p>
+            <div class="tracks">
+                <p>Tracks:</p>
+                <ul>
+                    <li>Pal</li>
+                    <li>Tujhe</li>
+                    <li>Khamoshiyan</li>
+                    <li>Soch Na Sake</li>
+                    <li>Yeh Fitoor Mera</li>
+                </ul>
+            </div>
+        </a>
+    </div>
+    <div class="album">
+        <a href="album3.html#">
+            <img src="../../../../static/pictures/arijit singh/album3.jpg" alt="Arijit Singh - Arijit Singh - Tum Hi Ho" />
+            <h2>Arijit Singh - Tum Hi Ho</h2>
+            <p>Arijit Singh</p>
+            <p class="year">Released: 2018</p>
+            <div class="tracks">
+                <p>Tracks:</p>
+                <ul>
+                    <li>Tum Hi Ho</li>
+                    <li>Sawan Aaya Hai</li>
+                    <li>Chahun Main Ya Naa</li>
+                    <li>Kabhi Jo Baadal Barse</li>
+                    <li>Dilliwaali Girlfriend</li>
+                </ul>
+            </div>
+        </a>
+    </div>
+
+    <div class="album">
+        <a href="album4.html">
+            <img src="../../../../static/pictures/arijit singh/album4.jpeg" alt="Arijit Singh - Love Forever - Arijit Singh" />
+            <h2>Love Forever - Arijit Singh</h2>
+            <p>Arijit Singh</p>
+            <p class="year">Released: 2023</p>
+            <div class="tracks">
+                <p>Tracks:</p>
+                <ul>
+                    <li>Tere Pyaar Mein</li>
+                    <li>Jhoome Jo Pathaan</li>
+                    <li>Kesariya</li>
+                    <li>Bairiya</li>
+                    <li>O Bedardiya</li>
+                </ul>
+            </div>
+        </a>
+    </div>
+
+    <div class="album">
+        <a href="album5.html">
+            <img src="../../../../static/pictures/arijit singh/album5.jpg" alt="Arijit Singh - Soulful Voice" />
+            <h2>Soulful Voice</h2>
+            <p>Arijit Singh</p>
+            <p class="year">Released: 2019</p>
+            <div class="tracks">
+                <p>Tracks:</p>
+                <ul>
+                    <li>Channa Mereya</li>
+                    <li>Agar Tum Saath Ho</li>
+                    <li>Samjhawan</li>
+                    <li>Tum Hi Ho</li>
+                    <li>Phir Le Aya Dil</li>
+                </ul>
+            </div>
+        </a>
+    </div>
+    </div>
+    <p><br><br><br></p>
+    <footer>
+		<p>&copy; Creators: Aniket
+			Gupta,Samarth Srikar<br>
+			<a href="../../../about.html" style="color:white; font-size: 100%;">About</a>
+		</p>
+	</footer>
+</body>

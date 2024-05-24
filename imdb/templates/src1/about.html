@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>About Us</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Rock%20Salt:wght@400;700&display=swap"
+    />
+	<style>
+		/* Global Styles */
+		body {
+			margin: 0;
+			font-family: Arial, sans-serif;
+			background-image: url('../../static/pictures/bg12.jpg');
+			/* background-repeat: no-repeat; */
+			background-size: 100%;
+			font-size: 16px;
+			align-items: center;
+
+		}
+
+		/* Header */
+		header {
+			background-color: #333;
+			color: #fff;
+			padding: 20px;
+		}
+		h2{
+			text-align: center;
+			font-size: xx-large;
+			font-family: 'Rock Salt', sans-serif;
+			color: aliceblue;
+		}
+		h1{
+			text-align: center;
+			font-size: xx-large;
+			font-family: 'Rock Salt', sans-serif;
+			color: aliceblue;
+		}
+
+		.navbar {
+			position: fixed;
+			top: 0;
+			left: 0;
+			width: 100%;
+			background-color: #333;
+		}
+
+		.navbar li.logo {
+			float: left;
+		}
+
+		.navbar li.logo a img {
+			width: 35px;
+			height: 35px;
+			border-radius: 50%;
+			vertical-align: middle;
+		}
+
+		.navbar ul {
+			list-style-type: none;
+			margin: 0;
+			padding: 0;
+			overflow: hidden;
+		}
+
+		.navbar li {
+			float: right;
+			margin: 5px;
+			font-size: larger;
+			background-color: transparent;
+		}
+
+		.navbar li a {
+			display: block;
+			color: white;
+			text-align: center;
+			font-size: 25px;
+			padding: 5px 7px;
+			text-decoration: none;
+		}
+
+		.navbar li a:hover:not(.active) {
+			background-color: #111;
+		}
+
+		.active {
+			background-color: #04AA6D;
+			size: cover;
+		}
+
+		/* Main Content */
+		main {
+			max-width: 1200px;
+			margin: 0 auto;
+			padding: 20px;
+		}
+
+		.hero {
+			background-color: transparent;
+			padding: 50px;
+			text-align: center;
+		}
+
+		.hero h1 {
+			margin-top: 0;
+			font-size: xx-large;
+			color: #f9efef;
+		}
+
+		.hero p {
+			font-size: larger;
+			color: #f9efef;
+		}
+
+		.values {
+			margin-top: 50px;
+		}
+
+		.values h2 {
+			text-align: center;
+			font-size: xx-large;
+			color: white;
+		}
+
+		.values ul {
+			margin-top: 20px;
+		}
+
+		.values li {
+			margin-bottom: 10px;
+			font-size: larger;
+			color: white;
+		}
+
+		.values i {
+			color: #29c3f1;
+			margin-right: 10px;
+		}
+
+		.team {
+			margin-top: 50px;
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-between;
+		}
+
+		.team h2 {
+			margin-top: 20px;
+			color: #fff1f1ee;
+		}
+
+		.team-member {
+			width: calc(33.33% - 20px);
+			margin-bottom: 30px;
+		}
+
+		.team-member img {
+			height: 350px;
+			width: 300px;
+			border-radius: 5%;
+			border: 5px black solid;
+		}
+
+		.team-member h3 {
+			font-size: larger;
+			margin-top: 20px;
+			color: #f9efef;
+		}
+		.team-member a {
+			font-size: larger;
+			color: #f9efef;
+		}
+
+		.testimonials {
+			margin-top: 50px;
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-between;
+		}
+
+		.testimonial {
+			background-color: transparent;
+			padding: 30px
+		}
+
+		.testimonial p {
+			color: aliceblue;
+			font-size: larger;
+			font-style: italic;
+			margin-bottom: 10px;
+		}
+
+		/* Footer */
+		footer {
+			/* position: fixed; */
+			bottom: 0;
+			left: 0;
+			width: 100%;
+			height: flex;
+			background-color: #333;
+			color: #fff;
+			padding: 2px;
+			text-align: center;
+		}
+		.fa-instagram {
+            background: transparent;
+            color: white;
+        }
+	</style>
+
+</head>
+
+<body>
+	<header>
+		<div class="navbar">
+			<ul>
+				<li class="logo"><a href="animation.html"><img src="../../static/pictures/logo2.png" alt="Logo">TUNESPHERE</a></li>
+				<li><a  class="active" href="about.html">About</a></li>
+				<li><a href="artist2.html">Artists</a></li>
+				<li><a href="home.html">Home</a></li>
+				<li><a href="search.html">Search</a></li>
+				<li><a href="spotlight.html">Spotlight</a></li>
+				<li><a href="playlist.html">Playlist</a></li>
+			</ul>
+		</div>
+	</header>
+
+	<main>
+		<section class="hero">
+			<h1>About Us</h1>
+			<p>We are a team of creative designers and developers who love to serve top picked songs and Albums
+			     for all the Music lovers out there.We always try to get free and high quality music for all.
+			</p>
+		</section>
+		<p>
+			<hr>
+		</p>
+
+		<section class="values">
+			<h2>Our Values</h2>
+			<ul>
+				<li><i class="fas fa-check"></i> Quality: We strive for excellence in everything we do.</li>
+				<li><i class="fas fa-check"></i> Creativity: We are passionate about creativity and innovation.</li>
+				<li><i class="fas fa-check"></i> Customer Focus: We put our customers first and strive to exceed their
+					expectations.</li>
+				<li><i class="fas fa-check"></i> Teamwork: We believe that working collaboratively produces the best
+					results.</li>
+			</ul>
+		</section>
+		<p>
+			<hr>
+		</p>
+		<h2>Meet Our Team</h2>
+		<section class="team">
+			<div class="team-member">
+				<img src="../../static/pictures/aniket.jpg" alt="Team Member 1">
+				<h3>Aniket Gupta</h3>
+				<a href="https://www.instagram.com/gupta_aniket_2712/" class="fa fa-instagram"> Instagram</a>
+				<a><br><br>aniket.gupta@students.iiit.ac.in</a>
+			</div>
+			<p>
+				<hr>
+			</p>
+			<div class="team-member">
+				<img src="../../static/pictures/samarth.png" alt="Team Member 2">
+				<h3>Samarth Srikar</h3>
+				<a href="https://www.instagram.com/_samarth_srikar/" class="fa fa-instagram"> Instagram</a>
+				<a><br><br>samarth.srikar@students.iiit.ac.in</a>
+			</div>
+			</section>
+		<p>
+			<hr>
+		</p>
+			<section class="testimonials">
+				<div class="testimonial">
+					<p>"Our website is dedicated to providing the latest news, reviews, and insights on the world of
+						music. We cover a wide range of genres, from rock and pop to hip-hop and electronic music, and
+						everything in between. Whether you are looking for new releases, classic hits, or hidden gems,
+						we have something for you."</p>
+					<p>"Thank you for visiting our website, and we hope that you find something here that inspires you
+						and helps you to deepen your appreciation for the incredible world of music. "</p>
+				</div>
+			</section>
+	</main>
+	<p><br><br></p>
+	<footer>
+		<p>&copy; Creators: Aniket
+			Gupta,Samarth Srikar<br>
+			<a href="about.html" style="color: white; font-size: 100%; ">About</a>
+		</p>
+	</footer>
+</body>
+
+</html>

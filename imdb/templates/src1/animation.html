@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>TUNESPHERE</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Rock%20Salt:wght@400;700&display=swap"
+    />
+    <style>
+      body {
+        font-family: "Rock Salt", sans-serif;
+        background-image: url("../static/pictures/bg12.jpg");
+        background-size: 100%;
+      }
+      #typewriter {
+        font-size: 12em;
+        text-align: center;
+        margin-top: 10%;
+      }
+      #typewriter img {
+        width: 275px;
+        height:275px;
+        border-radius: 50%;
+      }
+    </style>
+  </head>
+  <body>
+    <a
+      href="home.html"
+      style="text-decoration: none; font-family: 'Rock Salt', sans-serif"
+    >
+      <div id="typewriter" style="color: aliceblue">
+        <img src="../../static/pictures/logo2.png" alt="TUNESPHERE logo" />
+      </div>
+    </a>
+    <script>
+      const text = "TUNESPHERE";
+      const delay = 200; // milliseconds
+      const target = document.getElementById("typewriter");
+
+      let i = 0;
+
+      function type() {
+        if (i < text.length) {
+          target.innerHTML += text.charAt(i);
+          i++;
+          setTimeout(type, delay);
+        }
+      }
+
+      type();
+      setTimeout(function () {
+        window.location.href = "home.html";
+      }, 4000);
+    </script>
+  </body>
+</html>

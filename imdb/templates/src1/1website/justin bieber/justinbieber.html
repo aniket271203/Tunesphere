@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Justin Bieber's Top 5 Albums</title>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Open Sans', sans-serif;
+            /* background-color: #F5F5F5; */
+            background-image: url("../../../../static/pictures/justin bieber/bg3.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1 {
+            font-size: 60px;
+            font-weight: 600;
+            background-image: linear-gradient(to left, #553c9a, #b393d3);
+            color: transparent;
+            background-clip: text;
+            -webkit-background-clip: text;
+        }
+
+        h2,
+        p,
+        ul {
+            margin: 0;
+            padding: 0;
+        }
+
+        h1 {
+            text-align: center;
+            color: aliceblue;
+            margin-top: 30px;
+        }
+
+        .container {
+            max-width: 80%;
+            margin: 0 auto;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .album {
+            margin: 20px;
+            padding: 20px;
+            background-color: rgb(235, 230, 230);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 20px;
+            text-align: center;
+            transition: all 0.3s ease-in-out;
+            min-width: 230px;
+            max-width: 230px;
+        }
+
+        .album:hover {
+            transform: scale(1.05);
+        }
+
+        .album img {
+            max-width: 100%;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+
+        .album h2 {
+            font-size: 1.2rem;
+            font-weight: 600;
+            margin-bottom: 5px;
+        }
+
+        .album p {
+            font-size: 1rem;
+            margin-bottom: 5px;
+        }
+
+        .album .year {
+            font-style: italic;
+        }
+
+        .album .tracks {
+            margin-top: 10px;
+            font-size: 0.9rem;
+        }
+
+        .album .tracks p {
+            font-weight: 600;
+            margin-bottom: 5px;
+        }
+
+        .album .tracks ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            text-align: left;
+        }
+
+        .album .tracks li {
+            margin-bottom: 5px;
+        }
+
+        .navbar {
+			position: fixed;
+			top: 0;
+			left: 0;
+			width: 100%;
+			background-color: #333;
+            z-index: 1;
+		}
+
+		.navbar li.logo {
+			float: left;
+		}
+
+		.navbar li.logo a img {
+            width: 35px;
+            height: 35px;
+            border-radius: 50%;
+			vertical-align: middle;
+		}
+
+		.navbar ul {
+			list-style-type: none;
+			margin: 0;
+			padding: 0;
+			overflow: hidden;
+		}
+
+		.navbar li {
+			float: right;
+            margin: 5px;
+            font-size: larger;
+			background-color: transparent;
+		}
+
+		.navbar li a {
+			display: block;
+			color: white;
+			text-align: center;
+			padding: 5px 0px;
+			text-decoration: none;
+		}
+
+		.navbar li a:hover:not(.active) {
+			background-color: #111;
+		}
+
+		.active {
+			background-color: #04AA6D;
+		}
+        footer {
+            /* position: fixed; */
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="navbar">
+		<ul>
+			<li class="logo"><a href="../../../home.html"><img src="../../../../static/pictures/justin bieber/logo2.png" alt="Logo">TUNESPHERE</a></li>
+			<li><a href="../../../home.html">Home</a></li>
+            <li><a href="../../../about.html">About</a></li>
+            <li><a href="../../../artist2.html">Artists</a></li>
+            <li><a href="../../../search.html">Search</a></li>
+        <li><a href="../../../spotlight.html">Spotlight</a></li>
+        <li><a href="../../../playlist.html">Playlist</a></li>
+		</ul>
+	</div>
+    <p><br></p>
+    <h1>Justin Bieber's Top 5 Albums</h1>
+
+    <div class="container">
+        <a href="album1.html">
+            <div class="album">
+                <img src="../../../../static/pictures/justin bieber/album1.png" alt="Justice" />
+                <h2>Justice</h2>
+                <p>Justin Bieber</p>
+                <p class="year">Released: 2021</p>
+                <div class="tracks">
+                    <p>Tracks:</p>
+                    <ul>
+                        <li>2 Much</li>
+                        <li>Peaches</li>
+                        <li>As I Am (feat.Khalid) </li>
+                        <li>Ghost</li>
+                        <li>Holy(feat. Chance The Rapper)</li>
+                    </ul>
+                </div>
+        </a>
+    </div>
+
+    <div class="album">
+        <a href="album2.html">
+            <img src="../../../../static/pictures/justin bieber/album2.jpg" alt="Purpose(Deluxe)" />
+            <h2>Purpose(Deluxe)</h2>
+            <p>Justin Bieber</p>
+            <p class="year">Released: 2015</p>
+            <div class="tracks">
+                <p>Tracks:</p>
+                <ul>
+                    <li>Mark My Words</li>
+                    <li>I'll Show You</li>
+                    <li>What Do You Mean?</li>
+                    <li>Sorry</li>
+                    <li>Love Yourself</li>
+                </ul>
+            </div>
+        </a>
+    </div>
+    <div class="album">
+        <a href="album3.html#">
+            <img src="../../../../static/pictures/justin bieber/album3.jpg" alt="Changes" />
+            <h2>Changes</h2>
+            <p>Justin bieber</p>
+            <p class="year">Released: 2020</p>
+            <div class="tracks">
+                <p>Tracks:</p>
+                <ul>
+                    <li>All Around Me</li>
+                    <li>Habitual</li>
+                    <li>Come Around Me</li>
+                    <li>Intentions(feat. Quavo)</li>
+                    <li>Yummy</li>
+                </ul>
+            </div>
+        </a>
+    </div>
+
+    <div class="album">
+        <a href="album4.html">
+            <img src="../../../../static/pictures/justin bieber/album4.jpg" alt="My World 2.0" />
+            <h2>My World 2.0</h2>
+            <p>Justin Bieber</p>
+            <p class="year">Released: 2010</p>
+            <div class="tracks">
+                <p>Tracks:</p>
+                <ul>
+                    <li>Baby</li>
+                    <li>Somebody To Love</li>
+                    <li>Stuck In The Moment</li>
+                    <li>U Smile</li>
+                    <li>Runaway Love</li>
+                </ul>
+            </div>
+        </a>
+    </div>
+
+    <div class="album">
+        <a href="album5.html">
+            <img src="../../../../static/pictures/justin bieber/album5.jpeg" alt="Believe" />
+            <h2>Believe</h2>
+            <p>Justin Bieber</p>
+            <p class="year">Released: 2012</p>
+            <div class="tracks">
+                <p>Tracks:</p>
+                <ul>
+                    <li>All Around The World</li>
+                    <li>Boyfriend</li>
+                    <li>As Long As You Love Me</li>
+                    <li>Catching Feelings</li>
+                    <li>Take You</li>
+                </ul>
+            </div>
+        </a>
+    </div>
+    </div>
+    <p><br><br><br></p>
+    <footer>
+        <p>&copy; Creators: Aniket
+			Gupta,Samarth Srikar<br>
+			<a href="../../../about.html" style="color:white; font-size: 100%;">About</a>
+		</p>
+    </footer>
+</body>
